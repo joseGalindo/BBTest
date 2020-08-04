@@ -1,0 +1,24 @@
+{
+    "options" :
+    [{"header" :  "Camara",
+        "value" : null,
+        "type" : 0},
+    {"header" :  "Foto",
+        "value" : null,
+        "type" : 1},
+    {"header" :  "Nombre completo",
+        "value" : null,
+        "type" : 2},
+    {"header" :  "Número telefónico",
+        "value" : null,
+        "type" : 3},
+    {"header" :  "Fecha de nacimiento",
+        "value" : null,
+        "type" : 4},
+    {"header" :  "Sexo",
+        "value" : null,
+        "type" : 5},
+    {"header" : "Color favorito",
+        "value" : null,
+        "type" : 6}]
+}
