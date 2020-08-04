@@ -119,14 +119,14 @@ class DetailViewController: UITableViewController {
         let action = selected![indexPath.section]
         switch action.type! {
         case .Camera:
+            #if TARGET_OS_IPHONE
             let imagePicker = UIImagePickerController()
             imagePicker.delegate = self
             imagePicker.sourceType = .camera
             self.indexPathSelected = indexPath
-            #if targetEnvironment(simulator)
-            self.showError("Cannot lauch camera")
-            #else
             self.present(imagePicker, animated: true, completion: nil)
+            #else
+            self.showError("Cannot lauch camera, I'm a simulator")
             #endif
             break
         case .Photo, .Name, .Phone, .Birthdate:
